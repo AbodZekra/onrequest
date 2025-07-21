@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnRequest() - حلول برمجية مخصصة</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+    
+    <!-- شريط التنقل -->
+    <header class="header">
+        <nav class="navbar">
+
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="logo-container">
+                <div class="logo">
+                    <span class="logo-text">OnRequest</span>
+                </div>
+            </div>
+            
+            
+            <ul class="nav-links">
+                <li><a href="#home" class="active"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="#services"><i class="fas fa-cogs"></i> خدماتنا</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> أعمالنا</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> عن الشركة</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
+            </ul>
+            
+            
+            <div class="theme-toggle">
+                <button id="theme-switcher">
+                    <i class="fas fa-moon"></i>
+                    <span>الوضع الداكن</span>
+                </button>
+            </div>
+            
+        </nav>
+    </header>
+
+    <!-- القائمة الجانبية -->
+    <aside class="sidebar" dir="rtl">
+        <ul class="sidebar-links">
+            <li><a href="#home" class="active"><i class="fas fa-home"></i> الرئيسية</a></li>
+            <li><a href="#services"><i class="fas fa-cogs"></i> خدماتنا</a></li>
+            <li><a href="#projects"><i class="fas fa-project-diagram"></i> أعمالنا</a></li>
+            <li><a href="#about"><i class="fas fa-info-circle"></i> عن الشركة</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
+            <li class="theme-toggle-mobile">
+                <button id="theme-switcher-mobile">
+                    <i class="fas fa-moon"></i>
+                    <span>الوضع الداكن</span>
+                </button>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- المحتوى الرئيسي -->
+    <main class="main-content">
+        <!-- قسم الرئيسية -->
+        <section id="home" class="section hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title"> OnRequest <br><span>الرؤية</span> تسبق القرار
+                <p class="hero-subtitle">نبتكر قبل أن تحتاج... <br> نصمم حلولاً رقمية تلبي احتياجاتك مباشرة</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">أعمالنا</a>
+                    <a href="#contact" class="btn btn-outline">تواصل معنا</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img loading="lazy" src="img/onrequs1t.jpg.png" alt="OnRequest Solutions" width="500" height="400">
+            </div>
+        </section>
+
+        <!-- قسم الخدمات -->
+        <section id="services" class="section services-section">
+            <h2 class="section-title">خدماتنا المتكاملة</h2>
+            <p class="section-subtitle">نقدم مجموعة متكاملة من الخدمات التقنية لتحقيق أهداف عملك</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="service-title">تطوير الويب</h3>
+                    <p class="service-description">تصميم وتطوير مواقع وتطبيقات ويب متكاملة باستخدام أحدث التقنيات</p>
+                    <ul class="service-tech">
+                        <li>React</li>
+                        <li>Next js</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title">تطبيقات الجوال</h3>
+                    <p class="service-description">بناء تطبيقات جوال عالية الجودة لنظامي iOS و Android</p>
+                    <ul class="service-tech">
+                        <li>Flutter</li>
+                        <li>React Native</li>
+                        <!-- <li>Swift</li> -->
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="service-title">تطبيقات سطح المكتب</h3>
+                    <p class="service-description">نطوّر تطبيقات سطح مكتب احترافية وسريعة باستخدام تقنيات حديثة مثل   مصممة لتشتغل بسلاسة على أنظمة Windows، macOS، وLinux.</p>
+                    <ul class="service-tech">
+                        <li>Electron js</li>
+                        <!-- <li>Tauri</li> -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم الأعمال -->
+        <section id="projects" class="section projects-section">
+            <h2 class="section-title">أعمالنا</h2>
+            <p class="section-subtitle">بعض المشاريع التي نفخر بها</p>
+            
+            <div class="projects-container">
+                <!-- المشروع الأول -->
+                <div class="project-card">
+                    <div class="project-slider">
+                        <div class="slider-container">
+                            <div class="slide active">
+                                <img loading="lazy" src="img/imgpec/taskflow.jpg" alt="Project 1 Image 1" width="100" height="200">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="project-details">
+                        <h3 class="project-title">  taskflow</h3>
+                        <p class="project-description">    ادارة المهام بذكاء وسهولة مقدمة للشركات والمؤسسات</p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check-circle"></i> واجهة مستخدم متجاوبة</li>
+                            <li><i class="fas fa-check-circle"></i>   توزيع المهام وتتبعها</li>
+                            <li><i class="fas fa-check-circle"></i> لوحة تحكم متقدمة</li>
+                            <li><i class="fas fa-check-circle"></i> تقارير وتحليلات</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>postgresql</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- المشروع الثاني -->
+                                <div class="project-card">
+                    <div class="project-slider">
+                        <div class="slider-container">
+                            <div class="slide active">
+                                <img loading="lazy" src="img/imgpec/ecljpg.jpg" alt="Project 1 Image 1" width="100" height="200">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="project-details">
+                        <h3 class="project-title">  ecl web</h3>
+                        <p class="project-description">هو موقع وتطبيق ويب تعليمي يهدف إلى مساعدة طلاب التاسع والبكالوريا</p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check-circle"></i>توفير ملفات دراسية مجانية</li>
+                            <li><i class="fas fa-check-circle"></i>   واجهة بحث ذكية باستخدام التصنيفات أو أسماء الملفات</li>
+                            <li><i class="fas fa-check-circle"></i> واجهة مستخدم متجاوبة</li>
+                            <li><i class="fas fa-check-circle"></i>  مجتمع طلابي رقمي متكامل قيد التطوير...</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Next js</span>
+                            <span>postgresql</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- أعمال قيد التطوير -->
+                 <h2 class="section-title">قيد العمل</h2>
+                <div class="project-card in-progress">
+                    <div class="project-details">
+                        <h3 class="project-title">Quick Chat</h3>
+                        <p class="project-description">شات ذكي مخصص لكل شركة ,يتيح لها التفاعل مع العملاء وتقديم اجابات فورية بالاعتماد على بياناتها المخصصة</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="background:#eee; border-radius:8px; height:18px; width:100%; overflow:hidden;">
+                                <div style="background:#ba68c8; width:10%; height:100%; border-radius:8px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card in-progress">
+                    <div class="project-details">
+                        <h3 class="project-title">منصة استطلاعات رأي جامعية</h3>
+                        <p class="project-description">  نظام مصمم للجامعات يتيح إنشاء واستعراض استطلاعات الرأي، مع دعم لأنواع متعددة من التصويت (مفرد، متعدد، تفضيلي وغيرها).
+تتضمن المنصة لوحة تحكم مخصصة، آليات فرز وتحليل النتائج، مع تجربة مستخدم مبسطة وآمنة</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="background:#eee; border-radius:8px; height:18px; width:100%; overflow:hidden;">
+                                <div style="background:#cd7fdb; width:35%; height:100%; border-radius:8px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+        <!-- قسم عن الشركة -->
+        <section id="about" class="section about-section">
+            <div class="about-content">
+                <h2 class="section-title">من نحن</h2>
+                <p class="about-description">
+                    OnRequest() هي شركة متخصصة في تقديم الحلول البرمجية والتقنية المخصصة حسب طلب العميل. 
+                    نؤمن بأن كل عميل فريد ويستحق حلولاً مصممة خصيصًا لاحتياجاته.
+                </p>
+                <p class="about-description">
+                    فريقنا من المطورين والمصممين  يعملون معًا لتقديم منتجات عالية الجودة 
+                    تساعد أعمالك على النمو والازدهار في العصر الرقمي.
+                </p>
+                <!-- <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-label">مشروع مكتمل</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="25">0</div>
+                        <div class="stat-label">عميل راضٍ</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="10">0</div>
+                        <div class="stat-label">خبير تقني</div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="about-image">
+                <img loading="lazy" src="img/imgpec/us.jpg" alt="About OnRequest" width="500" height="400">
+            </div>
+        </section>
+
+        <!-- قسم اتصل بنا -->
+        <section id="contact" class="section contact-section">
+            <h2 class="section-title">تواصل معنا</h2>
+            <p class="section-subtitle">نحن هنا للإجابة على جميع استفساراتك</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>البريد الإلكتروني</h4>
+                            <a href="mailto:commerce.onrequest@gmail.com">commerce.onrequest@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>الهاتف</h4>
+                            <p dir="ltr">+ 352 681 523 130</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/onrequest.dev" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/Hadiiik" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="اسمك الكامل" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="بريدك الإلكتروني" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="الموضوع">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="رسالتك" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <span class="logo-text">OnRequest</span>
+                </div>
+                <p class="footer-about">
+                    الرؤية تسبق القرار
+                </p>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-title">روابط سريعة</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#services">خدماتنا</a></li>
+                    <li><a href="#projects">أعمالنا</a></li>
+                    <li><a href="#about">من نحن </a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-title">خدماتنا</h4>
+                <ul class="footer-links">
+                    <li><a href="#">تطبيقات الويب</a></li>
+                    <li><a href="#">تطبيقات الجوال</a></li>
+                    <li><a href="#">تطبيقات سطح المكتب</a></li>
+                    <li><a href="#">استشارات تقنية</a></li>
+                </ul>
+            </div>
+            
+
+        </div>
+        
+        <div class="footer-bottom" dir="rtl">
+            <p>&copy; 2025 OnRequest. جميع الحقوق محفوظة.</p>
+            <div class="footer-legal">
+                <a href="#">شروط الخدمة</a>
+                <a href="#">سياسة الخصوصية</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
