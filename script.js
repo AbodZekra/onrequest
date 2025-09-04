@@ -197,3 +197,58 @@ document.addEventListener('DOMContentLoaded', () => {
     updateProfileImage();
     lazyLoadImages();
 });
+
+
+
+
+
+
+
+
+
+document.querySelector('.contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // اجلب القيم من النموذج
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    // محتوى الرسالة
+    const fullMessage = `
+📬 رسالة جديدة من موقع OnRequest:
+
+👤 الاسم: ${name}
+📧 البريد الإلكتروني: ${email}
+📌 الموضوع: ${subject}
+📝 الرسالة:
+${message}
+    `;
+
+    // إعدادات البوت
+    const botToken = "7883403757:AAECfGbmitqHCe3KwqPY9SIMlKFm1izJMj4";     // ضع توكن البوت هنا
+    const chatId = "-1002556098849";         // ضع chat_id هنا
+    const telegramURL = `https://api.telegram.org/bot${botToken}/sendMessage`;
+
+    // إرسال الطلب
+    fetch(telegramURL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        chat_id: chatId,
+        text: fullMessage,
+        parse_mode: 'HTML'
+      })
+    })
+    .then(response => {
+      if (response.ok) {
+        document.querySelector('.contact-form').reset();
+      } else {
+      }
+    })
+    .catch(error => {
+    });
+  });
